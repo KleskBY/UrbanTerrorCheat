@@ -1,4 +1,3 @@
-// dllmain.cpp : Defines the entry point for the DLL application.
 #define _CRT_SECURE_NO_WARNINGS
 #include <Windows.h>
 #include <string>
@@ -6,8 +5,7 @@
 #include <chrono>
 #include <vector>
 #include <gl/GL.h>
-//#pragma comment(lib, "libMinHook.x86.lib")
-//#include "MinHook.h"
+
 #include "minhook/MinHook.h"
 
 #include "imgui/imgui.h"
@@ -71,7 +69,7 @@ void GetStyle()
 {
 	font_default = ImGui::GetIO().Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\segoeui.ttf", 20.0f, NULL);
 
-	ImGuiStyle* style = &ImGui::GetStyle(); // Setup style
+	ImGuiStyle* style = &ImGui::GetStyle();
 	style->Colors[ImGuiCol_Text] = ImColor(255, 255, 255, 255);
 	style->Colors[ImGuiCol_TextDisabled] = ImColor(53, 53, 53, 255);
 	style->Colors[ImGuiCol_WindowBg] = ImColor(25, 25, 25, 255);
@@ -197,7 +195,7 @@ bool __stdcall hkWglSwapBuffers(_In_ HDC hdc)
 			fovscale1 = getValueFloat(cDll + 0xC254DC);
 			fovscale2 = getValueFloat(cDll + 0xC254F0);
 			
-			view.vOrigin = getValueVector(cDll + 0xC2521C); //0x0102521C
+			view.vOrigin = getValueVector(cDll + 0xC2521C);
 			view.vOrigin.z = view.vOrigin.z - 32.f;
 			view.vForward = getValueVector(cDll + 0xC25228);
 			view.vRight = getValueVector(cDll + 0xC25234);
@@ -239,7 +237,7 @@ bool __stdcall hkWglSwapBuffers(_In_ HDC hdc)
 
 					if (aimpoint.x >= ScreenCenterX - radiusx && aimpoint.x <= ScreenCenterX + radiusx && aimpoint.y >= ScreenCenterY - radiusy && aimpoint.y <= ScreenCenterY + radiusy)
 					{
-						if (CrosshairDistance < fClosestPos) //get closest/nearest target to crosshair
+						if (CrosshairDistance < fClosestPos)
 						{
 							fClosestPos = CrosshairDistance;
 							BestTarget = i;
@@ -308,7 +306,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 		{
 			std::this_thread::sleep_for(std::chrono::milliseconds(500));
 		}
-		GameHWND = FindWindowA("Quake3-UrT", NULL); //SDL_app
+		GameHWND = FindWindowA("Quake3-UrT", NULL);
 
 		while (!GameHWND) std::this_thread::sleep_for(std::chrono::milliseconds(300));
 

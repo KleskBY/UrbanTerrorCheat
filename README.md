@@ -1,5 +1,5 @@
-# INTERIUM-Urabn Terror
-Simple OpenGL imgui hook + UrabnTerror cheat<br>
+# INTERIUM - Urabn Terror
+Simple OpenGL imgui hook + UrabnTerror cheat. My old project, can be useful in understanding W2S and opengl stuff.<br>
 <br>
 
 <b>Features:</b><br>

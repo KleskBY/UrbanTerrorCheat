@@ -59,9 +59,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="includes.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="minhook\buffer.h">
       <Filter>Source Files\minhook</Filter>
     </ClInclude>
@@ -109,6 +106,15 @@
     </ClInclude>
     <ClInclude Include="imgui\imgui_impl_opengl2.h">
       <Filter>Source Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

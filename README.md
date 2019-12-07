@@ -4,8 +4,8 @@ Simple OpenGL imgui hook + UrabnTerror cheat<br>
 
 <b>Features:</b><br>
 - Simple arrows menu (INSERT, arrows)<br>
-- Aimbot (ALT key)<br>
+- Aimbot (ALT key,buggy as fuck)<br>
 - ESP (buggy as fuck)<br>
 - Unhook (buggy as fuck)<br>
 
-![alt text](https://github.com/KleskBY/Unity3d-Aimbot-Wallhack-ESP/blob/master/CW.jpg?raw=true)<br>
+![alt text](https://github.com/KleskBY/UrbanTerrorCheat/blob/master/img.jpg?raw=true)<br>

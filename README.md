@@ -1,4 +1,4 @@
-# INTERIUM - Urabn Terror
+# INTERIUM - Urban Terror
 Simple OpenGL imgui hook + UrabnTerror cheat. My old project, can be useful in understanding W2S and opengl stuff. Crash on reset, so use window mode or inject when fullscreen <br>
 <br>
 
